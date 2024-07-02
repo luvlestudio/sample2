@@ -45,7 +45,7 @@ window.onload = () => {
     Kakao.Share.sendDefault({
       objectType: "feed",
       content: {
-        title: "심재환 ♥ 안수민의 모바일 청첩장",
+        title: "김지호 ♥ 임수아의 모바일 청첩장",
         description: "결혼식에 초대합니다♡",
         imageUrl: "https://i.imgur.com/pqyWnoC.png",
         imageWidth: 1200,

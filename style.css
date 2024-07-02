@@ -34,7 +34,7 @@ body {
   right: 2rem;
   width: 13px;
   height: 10px;
-  background-image: url("./img/arrow_w.png");
+  background-image: url("./img/arrow.png");
   background-size: cover;
 }
 
@@ -102,7 +102,7 @@ body {
 }
 
 #gallerySection {
-  background-color: #f7ede9;
+  background-color: #F4EEEB;
   padding-top: 20%;
 }
 
@@ -209,7 +209,7 @@ body {
 }
 
 .countdownTimeInfo {
-  color: #e5a39b;
+  color: #FF8E4E;
   font-weight: 600;
 }
 
@@ -251,7 +251,7 @@ body {
 
 #locationSection {
   margin-top: 3%;
-  background-color: #f7ede9;
+  background-color: #FCF3EE;
   height: 265px;
 }
 
@@ -316,8 +316,8 @@ main {
 }
 
 .accordion {
-  background-color: #e8ae9b;
-  color: white;
+  background-color: #FCF3EE;
+  color: black;
   cursor: pointer;
   padding: 0.8rem;
   width: 100%;
@@ -408,7 +408,7 @@ main {
 }
 
 #kakaoMapButton {
-  background-color: #dda593;
+  background-color: #F4A274;
   padding: 10px;
   text-align: center;
   width: auto;
