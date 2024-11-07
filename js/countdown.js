@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .toString()
         .padStart(2, "0");
     } else {
-      document.getElementById("coverdiscInfo").textContent = "결혼 축하합니다!";
+      document.getElementById("coverdiscInfo").textContent = "저희 결혼합니다";
       clearInterval(intervalID); // 결혼 날짜가 지나면 타이머 중지
     }
   }
