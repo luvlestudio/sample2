@@ -46,9 +46,9 @@ window.onload = () => {
     Kakao.Share.sendDefault({
       objectType: "feed",
       content: {
-        title: "김지호 ♥ 임수아의 모바일 청첩장",
-        description: "결혼식에 초대합니다♡",
-        imageUrl: "https://i.imgur.com/SDpgrUx.png",
+        title: "김준호 ♥ 유서현의 모바일 청첩장",
+        description: "2024년 8월 31일 토요일♡",
+        imageUrl: "https://i.imgur.com/wElurmN.png",
         imageWidth: 1200,
         imageHeight: 630,
         link: {
@@ -58,7 +58,7 @@ window.onload = () => {
       },
       buttons: [
         {
-          title: "자세히 보기",
+          title: "모바일청첩장 보러가기",
           link: {
             mobileWebUrl: "https://sample2.luvle.co.kr",
             webUrl: "https://sample2.luvle.co.kr",
@@ -115,5 +115,30 @@ window.onload = () => {
     const message = "모바일 청첩장을 확인해주세요! " + window.location.href;
     const link = "sms:?body=" + encodeURIComponent(message);
     window.location.href = link;
+  });
+
+  //BGM
+  const playButton = document.getElementById("playButton");
+  const audio = document.getElementById("bgm");
+  // 초기 상태는 play.png
+  playButton.src = "img/play.png";
+  playButton.addEventListener("click", function () {
+    if (audio) {
+      // 현재 오디오가 재생 중인지 여부를 확인
+      if (audio.paused) {
+        // 오디오가 멈춰있으면 재생
+        audio.play().catch((error) => {
+          console.error("오디오 재생 중 오류 발생:", error);
+        });
+        playButton.src = "img/stop.png"; // 버튼 이미지를 stop.png로 변경
+      } else {
+        // 오디오가 재생 중이면 정지
+        audio.pause();
+        audio.currentTime = 0; // 재생 위치를 처음으로 설정
+        playButton.src = "img/play.png"; // 버튼 이미지를 play.png로 변경
+      }
+    } else {
+      console.error("Audio element not found.");
+    }
   });
 };
